@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>matrix</title>
+<script type="text/javascript">
+function sum()
+{
+	//alert("hello");
+	var x=document.getElementById("num1");
+	var y=document.getElementById("num2");
+	var z=parseInt(x.value)+parseInt(y.value);
+	var res=document.getElementById("res");
+	res.innerHTML=z;
+}
+function sub()
+{
+	//alert("hello");
+	var x=document.getElementById("num1");
+	var y=document.getElementById("num2");
+	var z=parseInt(x.value)-parseInt(y.value);
+	var res=document.getElementById("res");
+	res.innerHTML=z;
+}
+function mul()
+{
+	//alert("hello");
+	var x=document.getElementById("num1");
+	var y=document.getElementById("num2");
+	var z=parseInt(x.value)*parseInt(y.value);
+	var res=document.getElementById("res");
+	res.innerHTML=z;
+}
+</script>
+</head>
+<body>
+<div class="main">
+<form name="myForm" action='' method="get">
+<label for="num1">X= </label>
+<input type="text" name="num1" id="num1" class="text-box"/>
+<label for="num2">Y= </label>
+<input type="text" name="num2" id="num2" class="text-box"/>
+<input type="button" value="Sum" onclick="sum()">
+<input type="button" value="Sub" onclick="sub()">
+<input type="button" value="Mul" onclick="mul()">
+</form>
+<div id="res">
+</div>
+</div>
+</body>
+</html>
