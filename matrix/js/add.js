@@ -13,7 +13,7 @@ for(i=0; i<x.length; i++)
 x[i][j]=prompt("("+i+","+j+"): ")
 
 document.write(x[i][j]);
-document.write("  ")
+document.write("")
 
 	}
 	document.write("<br/>")
